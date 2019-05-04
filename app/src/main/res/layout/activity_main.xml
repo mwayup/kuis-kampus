@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#00ff62"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FORM SAYURAN"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kode Sayuran"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/etKode"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Sayuran"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:id="@+id/etNama"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jenis Sayuran"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:minLines="3"
+        android:id="@+id/etJenis"/>
+
+    <TextView
+        android:id="@+id/lblWarna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Warna Sayuran"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+    <RadioGroup
+        android:id="@+id/rgWarna"
+        android:layout_below="@id/lblWarna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp">
+        <RadioButton
+            android:text="Hijau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbHijau"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="Kuning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbKuning"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="Ungu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbUngu"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonshape"
+        android:text="Simpan Data"
+        android:fontFamily="@font/gotham"
+        android:textColor="#ffff"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/btnSimpan"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffff"
+        android:fontFamily="@font/gotham"
+        android:background="@drawable/buttonshape"
+        android:text="Tampil Data"
+        android:id="@+id/btnTampil"/>
+
+</LinearLayout>
